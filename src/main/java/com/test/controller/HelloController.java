@@ -20,6 +20,7 @@ public class HelloController {
     @RequestMapping("/freeMarker")
     public String freeMarker(Model model){
         model.addAttribute("user", "tang");
+        model.addAttribute("fetch", "fetch");
         return "index";
     }
 }
